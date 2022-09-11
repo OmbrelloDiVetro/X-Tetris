@@ -1,0 +1,283 @@
+\hypertarget{strategy_8h}{}\doxysection{strategy.\+h File Reference}
+\label{strategy_8h}\index{strategy.h@{strategy.h}}
+
+
+library per la strategia di gioco della C\+PU  
+
+
+{\ttfamily \#include \char`\"{}data\+Type.\+h\char`\"{}}\newline
+Include dependency graph for strategy.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{strategy_8h_a2a12daf11eb91c19534422d47e44c9d3}{top\+\_\+margin}} (int matrix\mbox{[}15\mbox{]}\mbox{[}10\mbox{]}, int $\ast$tops)
+\item 
+void \mbox{\hyperlink{strategy_8h_a27420a05c8bcec1e9e1ec6742105600b}{I\+\_\+check}} (int top\mbox{[}10\mbox{]}, int $\ast$valid\+\_\+columns, int height)
+\item 
+void \mbox{\hyperlink{strategy_8h_abb9c585464d9f41ad2ed46fcbdc69496}{L\+\_\+check}} (int top\mbox{[}10\mbox{]}, int $\ast$valid\+\_\+columns, int height)
+\item 
+void \mbox{\hyperlink{strategy_8h_a814377f7df03aef6220da527044acf23}{J\+\_\+check}} (int top\mbox{[}10\mbox{]}, int $\ast$valid\+\_\+columns, int height)
+\item 
+void \mbox{\hyperlink{strategy_8h_aa66151f1628660e0118281ad492a3c9d}{O\+\_\+check}} (int top\mbox{[}10\mbox{]}, int $\ast$valid\+\_\+columns, int height)
+\item 
+void \mbox{\hyperlink{strategy_8h_a69f2826ed3d4fcf87cf408c1061b10ee}{S\+\_\+check}} (int top\mbox{[}10\mbox{]}, int valid\+\_\+columns\mbox{[}10\mbox{]}, int \mbox{\hyperlink{turn_8h_ac2e85fdbcc05f38c8e5be1553e722a0a}{piece\+\_\+height}})
+\item 
+void \mbox{\hyperlink{strategy_8h_a37a3ac7b2a72c198b1039f53b189e518}{T\+\_\+check}} (int top\mbox{[}10\mbox{]}, int valid\+\_\+columns\mbox{[}10\mbox{]}, int \mbox{\hyperlink{turn_8h_ac2e85fdbcc05f38c8e5be1553e722a0a}{piece\+\_\+height}})
+\item 
+void \mbox{\hyperlink{strategy_8h_a43bfdd4db4f7df2738d5a6beef78e16c}{Z\+\_\+check}} (int top\mbox{[}10\mbox{]}, int valid\+\_\+columns\mbox{[}10\mbox{]}, int \mbox{\hyperlink{turn_8h_ac2e85fdbcc05f38c8e5be1553e722a0a}{piece\+\_\+height}})
+\item 
+void \mbox{\hyperlink{strategy_8h_a4e834cc9f36f9a6270b17a7d699654c1}{copy\+\_\+table}} (int copy\mbox{[}15\mbox{]}\mbox{[}10\mbox{]}, int table\mbox{[}15\mbox{]}\mbox{[}10\mbox{]})
+\item 
+void \mbox{\hyperlink{strategy_8h_a3287dc2fc810b895dac91d9ffc99299b}{points\+\_\+check}} (\mbox{\hyperlink{structPiece}{Piece}} piece, int tops\mbox{[}10\mbox{]}, int valid\mbox{[}10\mbox{]}, int table\mbox{[}15\mbox{]}\mbox{[}10\mbox{]})
+\item 
+int \mbox{\hyperlink{strategy_8h_a9710fd8b9193aa03de2a4cffcf532cdc}{max\+\_\+score}} (int $\ast$all\+\_\+scores, int $\ast$max)
+\item 
+\mbox{\hyperlink{structPiece}{Piece}} $\ast$ \mbox{\hyperlink{strategy_8h_a6aeb963109e6b5d1152784dd1cc25e92}{Check}} (int piece\+\_\+count\mbox{[}7\mbox{]}, int tops\mbox{[}10\mbox{]}, int table\mbox{[}15\mbox{]}\mbox{[}10\mbox{]}, int $\ast$start\+\_\+col)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+library per la strategia di gioco della C\+PU 
+
+\begin{DoxyAuthor}{Author}
+Lorenzo e Aresù 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{strategy_8h_a6aeb963109e6b5d1152784dd1cc25e92}\label{strategy_8h_a6aeb963109e6b5d1152784dd1cc25e92}} 
+\index{strategy.h@{strategy.h}!Check@{Check}}
+\index{Check@{Check}!strategy.h@{strategy.h}}
+\doxysubsubsection{\texorpdfstring{Check()}{Check()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPiece}{Piece}}$\ast$ Check (\begin{DoxyParamCaption}\item[{int}]{piece\+\_\+count\mbox{[}7\mbox{]},  }\item[{int}]{tops\mbox{[}10\mbox{]},  }\item[{int}]{table\mbox{[}15\mbox{]}\mbox{[}10\mbox{]},  }\item[{int $\ast$}]{start\+\_\+col }\end{DoxyParamCaption})}
+
+Funzione per la selezione delle mosse della C\+PU
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece\+\_\+count} & numero di pezzi rimanenti \\
+\hline
+{\em tops} & cime della tavola da gioco \\
+\hline
+{\em table} & tavola da gioco \\
+\hline
+{\em start\+\_\+col} & colonna scelta per inserire il pezzo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ritorna il pezzo migliore da usare 
+\end{DoxyReturn}
+\mbox{\Hypertarget{strategy_8h_a4e834cc9f36f9a6270b17a7d699654c1}\label{strategy_8h_a4e834cc9f36f9a6270b17a7d699654c1}} 
+\index{strategy.h@{strategy.h}!copy\_table@{copy\_table}}
+\index{copy\_table@{copy\_table}!strategy.h@{strategy.h}}
+\doxysubsubsection{\texorpdfstring{copy\_table()}{copy\_table()}}
+{\footnotesize\ttfamily void copy\+\_\+table (\begin{DoxyParamCaption}\item[{int}]{copy\mbox{[}15\mbox{]}\mbox{[}10\mbox{]},  }\item[{int}]{table\mbox{[}15\mbox{]}\mbox{[}10\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione per copiare la tavola da gioco
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & matrice dove viene copiata la tavola da gioco \\
+\hline
+{\em table} & tavola da gioco \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{strategy_8h_a27420a05c8bcec1e9e1ec6742105600b}\label{strategy_8h_a27420a05c8bcec1e9e1ec6742105600b}} 
+\index{strategy.h@{strategy.h}!I\_check@{I\_check}}
+\index{I\_check@{I\_check}!strategy.h@{strategy.h}}
+\doxysubsubsection{\texorpdfstring{I\_check()}{I\_check()}}
+{\footnotesize\ttfamily void I\+\_\+check (\begin{DoxyParamCaption}\item[{int}]{top\mbox{[}10\mbox{]},  }\item[{int $\ast$}]{valid\+\_\+columns,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+Funzione per trovare una colonna adatta in cui mettere il pezzo I
+
+
+\begin{DoxyParams}{Parameters}
+{\em top} & cime della tavola da gioco \\
+\hline
+{\em valid\+\_\+columns} & colonne adatte per inserire il pezzo \\
+\hline
+{\em height} & altezza del pezzo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{strategy_8h_a814377f7df03aef6220da527044acf23}\label{strategy_8h_a814377f7df03aef6220da527044acf23}} 
+\index{strategy.h@{strategy.h}!J\_check@{J\_check}}
+\index{J\_check@{J\_check}!strategy.h@{strategy.h}}
+\doxysubsubsection{\texorpdfstring{J\_check()}{J\_check()}}
+{\footnotesize\ttfamily void J\+\_\+check (\begin{DoxyParamCaption}\item[{int}]{top\mbox{[}10\mbox{]},  }\item[{int $\ast$}]{valid\+\_\+columns,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+Funzione per trovare una colonna adatta in cui mettere il pezzo J
+
+
+\begin{DoxyParams}{Parameters}
+{\em top} & cime della tavola da gioco \\
+\hline
+{\em valid\+\_\+columns} & colonne adatte per inserire il pezzo \\
+\hline
+{\em height} & altezza del pezzo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{strategy_8h_abb9c585464d9f41ad2ed46fcbdc69496}\label{strategy_8h_abb9c585464d9f41ad2ed46fcbdc69496}} 
+\index{strategy.h@{strategy.h}!L\_check@{L\_check}}
+\index{L\_check@{L\_check}!strategy.h@{strategy.h}}
+\doxysubsubsection{\texorpdfstring{L\_check()}{L\_check()}}
+{\footnotesize\ttfamily void L\+\_\+check (\begin{DoxyParamCaption}\item[{int}]{top\mbox{[}10\mbox{]},  }\item[{int $\ast$}]{valid\+\_\+columns,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+Funzione per trovare una colonna adatta in cui mettere il pezzo L
+
+
+\begin{DoxyParams}{Parameters}
+{\em top} & cime della tavola da gioco \\
+\hline
+{\em valid\+\_\+columns} & colonne adatte per inserire il pezzo \\
+\hline
+{\em height} & altezza del pezzo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{strategy_8h_a9710fd8b9193aa03de2a4cffcf532cdc}\label{strategy_8h_a9710fd8b9193aa03de2a4cffcf532cdc}} 
+\index{strategy.h@{strategy.h}!max\_score@{max\_score}}
+\index{max\_score@{max\_score}!strategy.h@{strategy.h}}
+\doxysubsubsection{\texorpdfstring{max\_score()}{max\_score()}}
+{\footnotesize\ttfamily int max\+\_\+score (\begin{DoxyParamCaption}\item[{int $\ast$}]{all\+\_\+scores,  }\item[{int $\ast$}]{max }\end{DoxyParamCaption})}
+
+Funzione per trovare la mossa migliore
+
+
+\begin{DoxyParams}{Parameters}
+{\em all\+\_\+scores} & punti possibili \\
+\hline
+{\em max} & punteggio migliore \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ritorna la mossa che da il punteggio migliore
+\end{DoxyReturn}
+Funzione per trovare la mossa migliore
+
+
+\begin{DoxyParams}{Parameters}
+{\em all\+\_\+scores} & punti possibili \\
+\hline
+{\em max} & punteggio migliore \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ritorna la colonna della mossa che da il punteggio migliore 
+\end{DoxyReturn}
+\mbox{\Hypertarget{strategy_8h_aa66151f1628660e0118281ad492a3c9d}\label{strategy_8h_aa66151f1628660e0118281ad492a3c9d}} 
+\index{strategy.h@{strategy.h}!O\_check@{O\_check}}
+\index{O\_check@{O\_check}!strategy.h@{strategy.h}}
+\doxysubsubsection{\texorpdfstring{O\_check()}{O\_check()}}
+{\footnotesize\ttfamily void O\+\_\+check (\begin{DoxyParamCaption}\item[{int}]{top\mbox{[}10\mbox{]},  }\item[{int $\ast$}]{valid\+\_\+columns,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+Funzione per trovare una colonna adatta in cui mettere il pezzo O
+
+
+\begin{DoxyParams}{Parameters}
+{\em top} & cime della tavola da gioco \\
+\hline
+{\em valid\+\_\+columns} & colonne adatte per inserire il pezzo \\
+\hline
+{\em height} & altezza del pezzo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{strategy_8h_a3287dc2fc810b895dac91d9ffc99299b}\label{strategy_8h_a3287dc2fc810b895dac91d9ffc99299b}} 
+\index{strategy.h@{strategy.h}!points\_check@{points\_check}}
+\index{points\_check@{points\_check}!strategy.h@{strategy.h}}
+\doxysubsubsection{\texorpdfstring{points\_check()}{points\_check()}}
+{\footnotesize\ttfamily void points\+\_\+check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPiece}{Piece}}}]{piece,  }\item[{int}]{tops\mbox{[}10\mbox{]},  }\item[{int}]{valid\mbox{[}10\mbox{]},  }\item[{int}]{table\mbox{[}15\mbox{]}\mbox{[}10\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione per calcolare quanti punti darebbe una mossa
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece} & pezzo \\
+\hline
+{\em tops} & cime della tavola da gioco \\
+\hline
+{\em valid} & colonne adatte per inserire il pezzo \\
+\hline
+{\em table} & tavola da gioco\\
+\hline
+\end{DoxyParams}
+Funzione per calcolare quanti punti darebbe una mossa
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece} & pezzo \\
+\hline
+{\em tops} & cime della tavola da gioco \\
+\hline
+{\em valid} & colonne adatte per inserire il pezzo con rispettivo punteggio \\
+\hline
+{\em table} & tavola da gioco \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{strategy_8h_a69f2826ed3d4fcf87cf408c1061b10ee}\label{strategy_8h_a69f2826ed3d4fcf87cf408c1061b10ee}} 
+\index{strategy.h@{strategy.h}!S\_check@{S\_check}}
+\index{S\_check@{S\_check}!strategy.h@{strategy.h}}
+\doxysubsubsection{\texorpdfstring{S\_check()}{S\_check()}}
+{\footnotesize\ttfamily void S\+\_\+check (\begin{DoxyParamCaption}\item[{int}]{top\mbox{[}10\mbox{]},  }\item[{int}]{valid\+\_\+columns\mbox{[}10\mbox{]},  }\item[{int}]{piece\+\_\+height }\end{DoxyParamCaption})}
+
+Funzione per trovare una colonna adatta in cui mettere il pezzo S
+
+
+\begin{DoxyParams}{Parameters}
+{\em top} & cime della tavola da gioco \\
+\hline
+{\em valid\+\_\+columns} & colonne adatte per inserire il pezzo \\
+\hline
+{\em piece\+\_\+height} & altezza del pezzo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{strategy_8h_a37a3ac7b2a72c198b1039f53b189e518}\label{strategy_8h_a37a3ac7b2a72c198b1039f53b189e518}} 
+\index{strategy.h@{strategy.h}!T\_check@{T\_check}}
+\index{T\_check@{T\_check}!strategy.h@{strategy.h}}
+\doxysubsubsection{\texorpdfstring{T\_check()}{T\_check()}}
+{\footnotesize\ttfamily void T\+\_\+check (\begin{DoxyParamCaption}\item[{int}]{top\mbox{[}10\mbox{]},  }\item[{int}]{valid\+\_\+columns\mbox{[}10\mbox{]},  }\item[{int}]{piece\+\_\+height }\end{DoxyParamCaption})}
+
+Funzione per trovare una colonna adatta in cui mettere il pezzo T
+
+
+\begin{DoxyParams}{Parameters}
+{\em top} & cime della tavola da gioco \\
+\hline
+{\em valid\+\_\+columns} & colonne adatte per inserire il pezzo \\
+\hline
+{\em piece\+\_\+height} & altezza del pezzo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{strategy_8h_a2a12daf11eb91c19534422d47e44c9d3}\label{strategy_8h_a2a12daf11eb91c19534422d47e44c9d3}} 
+\index{strategy.h@{strategy.h}!top\_margin@{top\_margin}}
+\index{top\_margin@{top\_margin}!strategy.h@{strategy.h}}
+\doxysubsubsection{\texorpdfstring{top\_margin()}{top\_margin()}}
+{\footnotesize\ttfamily void top\+\_\+margin (\begin{DoxyParamCaption}\item[{int}]{matrix\mbox{[}15\mbox{]}\mbox{[}10\mbox{]},  }\item[{int $\ast$}]{tops }\end{DoxyParamCaption})}
+
+Funzione per trovare le cime della tavola da gioco
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & tavola da gioco \\
+\hline
+{\em tops} & cime della tavola da gioco \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{strategy_8h_a43bfdd4db4f7df2738d5a6beef78e16c}\label{strategy_8h_a43bfdd4db4f7df2738d5a6beef78e16c}} 
+\index{strategy.h@{strategy.h}!Z\_check@{Z\_check}}
+\index{Z\_check@{Z\_check}!strategy.h@{strategy.h}}
+\doxysubsubsection{\texorpdfstring{Z\_check()}{Z\_check()}}
+{\footnotesize\ttfamily void Z\+\_\+check (\begin{DoxyParamCaption}\item[{int}]{top\mbox{[}10\mbox{]},  }\item[{int}]{valid\+\_\+columns\mbox{[}10\mbox{]},  }\item[{int}]{piece\+\_\+height }\end{DoxyParamCaption})}
+
+Funzione per trovare una colonna adatta in cui mettere il pezzo Z
+
+
+\begin{DoxyParams}{Parameters}
+{\em top} & cime della tavola da gioco \\
+\hline
+{\em valid\+\_\+columns} & colonne adatte per inserire il pezzo \\
+\hline
+{\em piece\+\_\+height} & altezza del pezzo \\
+\hline
+\end{DoxyParams}

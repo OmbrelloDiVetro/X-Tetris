@@ -1,0 +1,42 @@
+\hypertarget{dataType_8h}{}\doxysection{data\+Type.\+h File Reference}
+\label{dataType_8h}\index{dataType.h@{dataType.h}}
+
+
+Costanti utilizzate nel progetto e strutture delle pedine e delle partite.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPiece}{Piece}}
+\item 
+struct \mbox{\hyperlink{structGameState}{Game\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{dataType_8h_a754f5c59516f130c30fc468b98c65154}\label{dataType_8h_a754f5c59516f130c30fc468b98c65154}} 
+\#define {\bfseries col}~10
+\item 
+\mbox{\Hypertarget{dataType_8h_af0f2d456606284e17d7b698dbfecf72d}\label{dataType_8h_af0f2d456606284e17d7b698dbfecf72d}} 
+\#define {\bfseries rig}~15
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{dataType_8h_aa4af7edfda369a730cbb122096033fa6}\label{dataType_8h_aa4af7edfda369a730cbb122096033fa6}} 
+typedef struct \mbox{\hyperlink{structPiece}{Piece}} {\bfseries Piece}
+\item 
+\mbox{\Hypertarget{dataType_8h_ad74d0fae2a41b21724fe224cf3ec6e13}\label{dataType_8h_ad74d0fae2a41b21724fe224cf3ec6e13}} 
+typedef struct \mbox{\hyperlink{structGameState}{Game\+State}} {\bfseries Game\+State}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Costanti utilizzate nel progetto e strutture delle pedine e delle partite. 
+
+\begin{DoxyAuthor}{Author}
+Lorenzo e Aresù 
+\end{DoxyAuthor}

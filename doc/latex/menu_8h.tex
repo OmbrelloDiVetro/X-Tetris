@@ -1,0 +1,99 @@
+\hypertarget{menu_8h}{}\doxysection{menu.\+h File Reference}
+\label{menu_8h}\index{menu.h@{menu.h}}
+
+
+libreria per il menu del gioco  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{menu_8h_a656a76b66bc3ee2b49227783ddc1db03}{easy\+Padding}} (char $\ast$)
+\item 
+void \mbox{\hyperlink{menu_8h_a55528ce3502c1ba485e04f6cf3a4a968}{title}} ()
+\item 
+void \mbox{\hyperlink{menu_8h_ac2bf81c8d178fb8a48f3115c0d630fe6}{rules}} ()
+\item 
+int \mbox{\hyperlink{menu_8h_af9787e56f27a852296f5409252ea9af3}{mode\+Choice}} ()
+\item 
+void \mbox{\hyperlink{menu_8h_ab1af8108b9ce6185bd78efa60a49233a}{menu}} (int $\ast$)
+\item 
+void \mbox{\hyperlink{menu_8h_ac5842132fb851b087e7c845110849457}{single\+Player\+Mode}} ()
+\item 
+void \mbox{\hyperlink{menu_8h_a5cfb1debb20a6c61e8f32d76e51a6f4c}{multi\+Player\+Mode}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+libreria per il menu del gioco 
+
+\begin{DoxyAuthor}{Author}
+Lorenzo e Aresù 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{menu_8h_a656a76b66bc3ee2b49227783ddc1db03}\label{menu_8h_a656a76b66bc3ee2b49227783ddc1db03}} 
+\index{menu.h@{menu.h}!easyPadding@{easyPadding}}
+\index{easyPadding@{easyPadding}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{easyPadding()}{easyPadding()}}
+{\footnotesize\ttfamily void easy\+Padding (\begin{DoxyParamCaption}\item[{char $\ast$}]{txt }\end{DoxyParamCaption})}
+
+Stampa a schermo con padding e bordo
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & stringa che viene stampato \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8h_ab1af8108b9ce6185bd78efa60a49233a}\label{menu_8h_ab1af8108b9ce6185bd78efa60a49233a}} 
+\index{menu.h@{menu.h}!menu@{menu}}
+\index{menu@{menu}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}\item[{int $\ast$}]{status }\end{DoxyParamCaption})}
+
+Funzione principale del menù
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & stato che permette di scegliere se vedere le regole, scegliere modalità di gioco o uscire dal gioco \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8h_af9787e56f27a852296f5409252ea9af3}\label{menu_8h_af9787e56f27a852296f5409252ea9af3}} 
+\index{menu.h@{menu.h}!modeChoice@{modeChoice}}
+\index{modeChoice@{modeChoice}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{modeChoice()}{modeChoice()}}
+{\footnotesize\ttfamily int mode\+Choice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stampa a schermo e permette di scegliere la modalità di gioco
+
+\begin{DoxyReturn}{Returns}
+ritorna la scelata fatta dal giocatore 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8h_a5cfb1debb20a6c61e8f32d76e51a6f4c}\label{menu_8h_a5cfb1debb20a6c61e8f32d76e51a6f4c}} 
+\index{menu.h@{menu.h}!multiPlayerMode@{multiPlayerMode}}
+\index{multiPlayerMode@{multiPlayerMode}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{multiPlayerMode()}{multiPlayerMode()}}
+{\footnotesize\ttfamily void multi\+Player\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stampa a schermo e permette di scegliere tra le due modalità multi player, contro la C\+PU o contro un giocatore umano \mbox{\Hypertarget{menu_8h_ac2bf81c8d178fb8a48f3115c0d630fe6}\label{menu_8h_ac2bf81c8d178fb8a48f3115c0d630fe6}} 
+\index{menu.h@{menu.h}!rules@{rules}}
+\index{rules@{rules}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{rules()}{rules()}}
+{\footnotesize\ttfamily void rules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stampa a schermo le regole del gioco \char`\"{}\+Tetris\char`\"{} \mbox{\Hypertarget{menu_8h_ac5842132fb851b087e7c845110849457}\label{menu_8h_ac5842132fb851b087e7c845110849457}} 
+\index{menu.h@{menu.h}!singlePlayerMode@{singlePlayerMode}}
+\index{singlePlayerMode@{singlePlayerMode}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{singlePlayerMode()}{singlePlayerMode()}}
+{\footnotesize\ttfamily void single\+Player\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Chiama la funzione per iniziare a giocare da soli \mbox{\Hypertarget{menu_8h_a55528ce3502c1ba485e04f6cf3a4a968}\label{menu_8h_a55528ce3502c1ba485e04f6cf3a4a968}} 
+\index{menu.h@{menu.h}!title@{title}}
+\index{title@{title}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{title()}{title()}}
+{\footnotesize\ttfamily void title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stampa a schermo il titolo \char`\"{}\+Tetris\char`\"{} e il nome degli autori del programma 

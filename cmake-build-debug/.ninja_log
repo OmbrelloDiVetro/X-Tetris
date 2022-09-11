@@ -1,0 +1,7 @@
+# ninja log v5
+823	2180	6845916357640898	CMakeFiles/tetris_2.dir/strategy.c.obj	90945a4aa9438b18
+2112	2527	6845916362081292	CMakeFiles/tetris_2.dir/mode.c.obj	8671cff61f398ef8
+2003	2583	6845916362819451	CMakeFiles/tetris_2.dir/turn.c.obj	d9b93b90aea14fc1
+734	2112	6845916357051177	CMakeFiles/tetris_2.dir/main.c.obj	22ab791f7b8e379a
+771	2001	6845916356794354	CMakeFiles/tetris_2.dir/menu.c.obj	fed198e6e8a37da9
+2584	4006	6845916377194430	tetris_2.exe	c760b4bcfdf07b2c

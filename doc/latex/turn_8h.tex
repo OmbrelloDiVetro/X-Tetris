@@ -1,0 +1,392 @@
+\hypertarget{turn_8h}{}\doxysection{turn.\+h File Reference}
+\label{turn_8h}\index{turn.h@{turn.h}}
+
+
+libreria usate ogni turno delle partite  
+
+
+{\ttfamily \#include \char`\"{}data\+Type.\+h\char`\"{}}\newline
+Include dependency graph for turn.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{turn_8h_ad6a728d91a8a4923927781da8a6718c6}{fill\+\_\+table\+\_\+with\+\_\+0}} (int a\mbox{[}$\,$\mbox{]}\mbox{[}col\mbox{]})
+\item 
+void \mbox{\hyperlink{turn_8h_ab45d5b91bce4d9f36fe52ee7cb683607}{print\+\_\+table}} (int matrix\mbox{[}15\mbox{]}\mbox{[}10\mbox{]})
+\item 
+int \mbox{\hyperlink{turn_8h_a843b16ea93dd7a39b1b119867a09cd35}{game\+\_\+over}} (int piece\+\_\+count\mbox{[}7\mbox{]})
+\item 
+void \mbox{\hyperlink{turn_8h_ab04b1296b1e3ac64e4af658cf21d84b9}{print\+\_\+all\+\_\+pieces\+\_\+row}} (int piece\+\_\+count\mbox{[}7\mbox{]}, \mbox{\hyperlink{structPiece}{Piece}} $\ast$pieces\mbox{[}7\mbox{]})
+\item 
+void \mbox{\hyperlink{turn_8h_ae623562f830770c0007f6c7b3b78208a}{copy\+\_\+piece}} (int chosen\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, int copy\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\item 
+void \mbox{\hyperlink{turn_8h_a4eb6f0d99a0a8e8b981bc46c395348fe}{is\+\_\+a\+\_\+piece}} (char chosen\mbox{[}50\mbox{]})
+\item 
+int \mbox{\hyperlink{turn_8h_aa3eb2cae4158637f02e6530433d21fb7}{out\+\_\+of\+\_\+pieces}} (char $\ast$chosen, \mbox{\hyperlink{structPiece}{Piece}} $\ast$pieces\mbox{[}7\mbox{]}, int $\ast$piece\+\_\+count)
+\item 
+\mbox{\hyperlink{structPiece}{Piece}} $\ast$ \mbox{\hyperlink{turn_8h_ac20d5dcaf5022d09dca120d4a3bac8fd}{chosen\+\_\+piece}} (\mbox{\hyperlink{structPiece}{Piece}} $\ast$pieces\mbox{[}7\mbox{]}, int $\ast$piece\+\_\+count)
+\item 
+int \mbox{\hyperlink{turn_8h_ab81ed1375c4112089dd30c679f7df8f3}{chosen\+\_\+rotation}} ()
+\item 
+void \mbox{\hyperlink{turn_8h_a0dc0510be723e706de09d2247e7f5a7c}{rotate\+\_\+alt}} (int piece\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, int rotation\+\_\+counter)
+\item 
+void \mbox{\hyperlink{turn_8h_a2619f62f86b046dd3a1bf8b845610a91}{shift\+\_\+piece}} (int piece\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\item 
+void \mbox{\hyperlink{turn_8h_a5a685c0eed1c5cac46b2ceca9ee7d8af}{rotate}} (int piece\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, int rotation\+\_\+counter)
+\item 
+int \mbox{\hyperlink{turn_8h_a2d4ae9af54c0767781ab6175e077bc00}{piece\+\_\+width}} (int($\ast$tetramino)\mbox{[}4\mbox{]})
+\item 
+int \mbox{\hyperlink{turn_8h_ac2e85fdbcc05f38c8e5be1553e722a0a}{piece\+\_\+height}} (int($\ast$tetramino)\mbox{[}4\mbox{]})
+\item 
+int \mbox{\hyperlink{turn_8h_a9c00df95475a506c605bf4cc34188334}{valid\+\_\+selection}} (int column, int($\ast$tetramino)\mbox{[}4\mbox{]})
+\item 
+int \mbox{\hyperlink{turn_8h_af154d42290a76a694ac9a8a93d85ecda}{choose\+\_\+position}} (int($\ast$tetramino)\mbox{[}4\mbox{]})
+\item 
+int \mbox{\hyperlink{turn_8h_a7f6f8a49c813dc1b690a2b6d2fb59df6}{placement}} (int($\ast$tetramino)\mbox{[}4\mbox{]}, int matrix\mbox{[}15\mbox{]}\mbox{[}10\mbox{]}, int starting\+\_\+col)
+\item 
+void \mbox{\hyperlink{turn_8h_a7fd2d6157abb71badf7de2c6cc766e64}{update\+\_\+table}} (int matrix\mbox{[}15\mbox{]}\mbox{[}10\mbox{]}, int piece\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, int height, int width, int start\+\_\+row, int start\+\_\+col)
+\item 
+int \mbox{\hyperlink{turn_8h_a8d5fbf4a723f436e8e68c68ce2ea0fb8}{clear\+\_\+line}} (int table\mbox{[}15\mbox{]}\mbox{[}10\mbox{]}, int $\ast$points\+\_\+counter)
+\item 
+void \mbox{\hyperlink{turn_8h_a83031440ac09581e8f0950f772436dd4}{revert\+\_\+table}} (int table\mbox{[}15\mbox{]}\mbox{[}10\mbox{]}, int n)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+libreria usate ogni turno delle partite 
+
+\begin{DoxyAuthor}{Author}
+Lorenzo e Aresù 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{turn_8h_af154d42290a76a694ac9a8a93d85ecda}\label{turn_8h_af154d42290a76a694ac9a8a93d85ecda}} 
+\index{turn.h@{turn.h}!choose\_position@{choose\_position}}
+\index{choose\_position@{choose\_position}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{choose\_position()}{choose\_position()}}
+{\footnotesize\ttfamily int choose\+\_\+position (\begin{DoxyParamCaption}\item[{int($\ast$)}]{tetramino\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+Stampa a schermo e permette di scegliere in che colonna inserire un pezzo
+
+
+\begin{DoxyParams}{Parameters}
+{\em tetramino} & pezzo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ritorna la colonna scelta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{turn_8h_ac20d5dcaf5022d09dca120d4a3bac8fd}\label{turn_8h_ac20d5dcaf5022d09dca120d4a3bac8fd}} 
+\index{turn.h@{turn.h}!chosen\_piece@{chosen\_piece}}
+\index{chosen\_piece@{chosen\_piece}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{chosen\_piece()}{chosen\_piece()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPiece}{Piece}}$\ast$ chosen\+\_\+piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPiece}{Piece}} $\ast$}]{pieces\mbox{[}7\mbox{]},  }\item[{int $\ast$}]{piece\+\_\+count }\end{DoxyParamCaption})}
+
+Stampa a schermo e permette di scegliere uno dei sette tipi di pezzi
+
+
+\begin{DoxyParams}{Parameters}
+{\em pieces} & pointers ai pezzi selezionabili \\
+\hline
+{\em piece\+\_\+count} & numero di pezzi rimanenti \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ritorna il pezzo scelto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{turn_8h_ab81ed1375c4112089dd30c679f7df8f3}\label{turn_8h_ab81ed1375c4112089dd30c679f7df8f3}} 
+\index{turn.h@{turn.h}!chosen\_rotation@{chosen\_rotation}}
+\index{chosen\_rotation@{chosen\_rotation}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{chosen\_rotation()}{chosen\_rotation()}}
+{\footnotesize\ttfamily int chosen\+\_\+rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stampa a schermo e permette di scegliere di quanti gradi ruotare il pezzo
+
+\begin{DoxyReturn}{Returns}
+ritorna la rotazione scelta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{turn_8h_a8d5fbf4a723f436e8e68c68ce2ea0fb8}\label{turn_8h_a8d5fbf4a723f436e8e68c68ce2ea0fb8}} 
+\index{turn.h@{turn.h}!clear\_line@{clear\_line}}
+\index{clear\_line@{clear\_line}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{clear\_line()}{clear\_line()}}
+{\footnotesize\ttfamily int clear\+\_\+line (\begin{DoxyParamCaption}\item[{int}]{table\mbox{[}15\mbox{]}\mbox{[}10\mbox{]},  }\item[{int $\ast$}]{points\+\_\+counter }\end{DoxyParamCaption})}
+
+Calcola il numero di righe eliminate e i punti ottenuti
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & tavola da gioco \\
+\hline
+{\em points\+\_\+counter} & punti ottenuti \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ritorna il numero di righe eliminate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{turn_8h_ae623562f830770c0007f6c7b3b78208a}\label{turn_8h_ae623562f830770c0007f6c7b3b78208a}} 
+\index{turn.h@{turn.h}!copy\_piece@{copy\_piece}}
+\index{copy\_piece@{copy\_piece}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{copy\_piece()}{copy\_piece()}}
+{\footnotesize\ttfamily void copy\+\_\+piece (\begin{DoxyParamCaption}\item[{int}]{chosen\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{int}]{copy\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione per copiare un pezzo
+
+
+\begin{DoxyParams}{Parameters}
+{\em chose} & pezzo da copiare \\
+\hline
+{\em copy} & matrice dove viene copiato il pezzo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{turn_8h_ad6a728d91a8a4923927781da8a6718c6}\label{turn_8h_ad6a728d91a8a4923927781da8a6718c6}} 
+\index{turn.h@{turn.h}!fill\_table\_with\_0@{fill\_table\_with\_0}}
+\index{fill\_table\_with\_0@{fill\_table\_with\_0}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{fill\_table\_with\_0()}{fill\_table\_with\_0()}}
+{\footnotesize\ttfamily void fill\+\_\+table\+\_\+with\+\_\+0 (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]}\mbox{[}col\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione per riempire la tavola di 0
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & la tavola\\
+\hline
+\end{DoxyParams}
+Funzione per riempire la tavola di 0
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & tavola 10$\ast$15 da riempire di 0 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{turn_8h_a843b16ea93dd7a39b1b119867a09cd35}\label{turn_8h_a843b16ea93dd7a39b1b119867a09cd35}} 
+\index{turn.h@{turn.h}!game\_over@{game\_over}}
+\index{game\_over@{game\_over}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{game\_over()}{game\_over()}}
+{\footnotesize\ttfamily int game\+\_\+over (\begin{DoxyParamCaption}\item[{int}]{piece\+\_\+count\mbox{[}7\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione per controllare se i pezzi sono esauriti
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece\+\_\+count} & numero di pezzi rimanenti \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ritorna int 1 se i pezzi sono esauriti e 0 altromenti 
+\end{DoxyReturn}
+\mbox{\Hypertarget{turn_8h_a4eb6f0d99a0a8e8b981bc46c395348fe}\label{turn_8h_a4eb6f0d99a0a8e8b981bc46c395348fe}} 
+\index{turn.h@{turn.h}!is\_a\_piece@{is\_a\_piece}}
+\index{is\_a\_piece@{is\_a\_piece}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{is\_a\_piece()}{is\_a\_piece()}}
+{\footnotesize\ttfamily void is\+\_\+a\+\_\+piece (\begin{DoxyParamCaption}\item[{char}]{chosen\mbox{[}50\mbox{]} }\end{DoxyParamCaption})}
+
+Stampa a schermo e permette di scegliere quale dei sette pezzi inserire e se la scelta è valida
+
+
+\begin{DoxyParams}{Parameters}
+{\em chosen} & scelta del giocatore \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{turn_8h_aa3eb2cae4158637f02e6530433d21fb7}\label{turn_8h_aa3eb2cae4158637f02e6530433d21fb7}} 
+\index{turn.h@{turn.h}!out\_of\_pieces@{out\_of\_pieces}}
+\index{out\_of\_pieces@{out\_of\_pieces}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{out\_of\_pieces()}{out\_of\_pieces()}}
+{\footnotesize\ttfamily int out\+\_\+of\+\_\+pieces (\begin{DoxyParamCaption}\item[{char $\ast$}]{chosen,  }\item[{\mbox{\hyperlink{structPiece}{Piece}} $\ast$}]{pieces\mbox{[}7\mbox{]},  }\item[{int $\ast$}]{piece\+\_\+count }\end{DoxyParamCaption})}
+
+Funzione per controllare un tipo di pezzo selezionato è esaurito
+
+
+\begin{DoxyParams}{Parameters}
+{\em chosen} & pezzo selezionato \\
+\hline
+{\em pieces} & pointers ai pezzi selezionabili \\
+\hline
+{\em piece\+\_\+count} & numero di pezzi rimanenti \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ritorna int 1 se il pezzo è stato esaurito e 0 altromenti 
+\end{DoxyReturn}
+\mbox{\Hypertarget{turn_8h_ac2e85fdbcc05f38c8e5be1553e722a0a}\label{turn_8h_ac2e85fdbcc05f38c8e5be1553e722a0a}} 
+\index{turn.h@{turn.h}!piece\_height@{piece\_height}}
+\index{piece\_height@{piece\_height}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{piece\_height()}{piece\_height()}}
+{\footnotesize\ttfamily int piece\+\_\+height (\begin{DoxyParamCaption}\item[{int($\ast$)}]{tetramino\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione per calcolare l\textquotesingle{}altezza del pezzo
+
+
+\begin{DoxyParams}{Parameters}
+{\em tetramino} & pezzo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ritorna la l\textquotesingle{}altezza del pezzo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{turn_8h_a2d4ae9af54c0767781ab6175e077bc00}\label{turn_8h_a2d4ae9af54c0767781ab6175e077bc00}} 
+\index{turn.h@{turn.h}!piece\_width@{piece\_width}}
+\index{piece\_width@{piece\_width}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{piece\_width()}{piece\_width()}}
+{\footnotesize\ttfamily int piece\+\_\+width (\begin{DoxyParamCaption}\item[{int($\ast$)}]{tetramino\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione per calcolare la larghezza del pezzo
+
+
+\begin{DoxyParams}{Parameters}
+{\em tetramino} & pezzo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ritorna la larghezza del pezzo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{turn_8h_a7f6f8a49c813dc1b690a2b6d2fb59df6}\label{turn_8h_a7f6f8a49c813dc1b690a2b6d2fb59df6}} 
+\index{turn.h@{turn.h}!placement@{placement}}
+\index{placement@{placement}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{placement()}{placement()}}
+{\footnotesize\ttfamily int placement (\begin{DoxyParamCaption}\item[{int($\ast$)}]{tetramino\mbox{[}4\mbox{]},  }\item[{int}]{matrix\mbox{[}15\mbox{]}\mbox{[}10\mbox{]},  }\item[{int}]{starting\+\_\+col }\end{DoxyParamCaption})}
+
+Funzione per trovare da quale riga bisogna iniziare a copiare il pezzo sulla tavola
+
+
+\begin{DoxyParams}{Parameters}
+{\em tetramino} & pezzo \\
+\hline
+{\em matrix} & tavola da gioco \\
+\hline
+{\em starting\+\_\+col} & colonna scelta per inserire il pezzo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ritorna la riga della tavola da cui cominciare a copiare il pezzo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{turn_8h_ab04b1296b1e3ac64e4af658cf21d84b9}\label{turn_8h_ab04b1296b1e3ac64e4af658cf21d84b9}} 
+\index{turn.h@{turn.h}!print\_all\_pieces\_row@{print\_all\_pieces\_row}}
+\index{print\_all\_pieces\_row@{print\_all\_pieces\_row}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{print\_all\_pieces\_row()}{print\_all\_pieces\_row()}}
+{\footnotesize\ttfamily void print\+\_\+all\+\_\+pieces\+\_\+row (\begin{DoxyParamCaption}\item[{int}]{piece\+\_\+count\mbox{[}7\mbox{]},  }\item[{\mbox{\hyperlink{structPiece}{Piece}} $\ast$}]{pieces\mbox{[}7\mbox{]} }\end{DoxyParamCaption})}
+
+Stampa a schermo in una riga tutti i tipi di pezzi da gioco e quanti ne rimangono
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece\+\_\+count} & numero di pezzi rimanenti \\
+\hline
+{\em pieces} & pointers ai pezzi selezionabili \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{turn_8h_ab45d5b91bce4d9f36fe52ee7cb683607}\label{turn_8h_ab45d5b91bce4d9f36fe52ee7cb683607}} 
+\index{turn.h@{turn.h}!print\_table@{print\_table}}
+\index{print\_table@{print\_table}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{print\_table()}{print\_table()}}
+{\footnotesize\ttfamily void print\+\_\+table (\begin{DoxyParamCaption}\item[{int}]{matrix\mbox{[}15\mbox{]}\mbox{[}10\mbox{]} }\end{DoxyParamCaption})}
+
+Stampa a schermo la tavola
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & tavola da gioco \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{turn_8h_a83031440ac09581e8f0950f772436dd4}\label{turn_8h_a83031440ac09581e8f0950f772436dd4}} 
+\index{turn.h@{turn.h}!revert\_table@{revert\_table}}
+\index{revert\_table@{revert\_table}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{revert\_table()}{revert\_table()}}
+{\footnotesize\ttfamily void revert\+\_\+table (\begin{DoxyParamCaption}\item[{int}]{table\mbox{[}15\mbox{]}\mbox{[}10\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Stampa il numero delle righe da invertire e partendo dal fondo della tavola, le invertisce
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & tavola da gioco \\
+\hline
+{\em n} & righe da invertire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{turn_8h_a5a685c0eed1c5cac46b2ceca9ee7d8af}\label{turn_8h_a5a685c0eed1c5cac46b2ceca9ee7d8af}} 
+\index{turn.h@{turn.h}!rotate@{rotate}}
+\index{rotate@{rotate}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void rotate (\begin{DoxyParamCaption}\item[{int}]{piece\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{int}]{rotation\+\_\+counter }\end{DoxyParamCaption})}
+
+Funzione per ruotare il pezzo
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece} & pezzo \\
+\hline
+{\em rotation\+\_\+counter} & numero di volte per cui ruotare il pezzo di 90° \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{turn_8h_a0dc0510be723e706de09d2247e7f5a7c}\label{turn_8h_a0dc0510be723e706de09d2247e7f5a7c}} 
+\index{turn.h@{turn.h}!rotate\_alt@{rotate\_alt}}
+\index{rotate\_alt@{rotate\_alt}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{rotate\_alt()}{rotate\_alt()}}
+{\footnotesize\ttfamily void rotate\+\_\+alt (\begin{DoxyParamCaption}\item[{int}]{piece\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{int}]{rotation\+\_\+counter }\end{DoxyParamCaption})}
+
+Funzione per ruotare il pezzo di 90°$\ast$rotation\+\_\+count
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece} & pezzo \\
+\hline
+{\em rotation\+\_\+counter} & numero di volte per cui ruotare il pezzo di 90° \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{turn_8h_a2619f62f86b046dd3a1bf8b845610a91}\label{turn_8h_a2619f62f86b046dd3a1bf8b845610a91}} 
+\index{turn.h@{turn.h}!shift\_piece@{shift\_piece}}
+\index{shift\_piece@{shift\_piece}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{shift\_piece()}{shift\_piece()}}
+{\footnotesize\ttfamily void shift\+\_\+piece (\begin{DoxyParamCaption}\item[{int}]{piece\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione per spostare il pezzo nell\textquotesingle{}estremo alto a sinistra della matrice 4$\ast$4
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece} & pezzo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{turn_8h_a7fd2d6157abb71badf7de2c6cc766e64}\label{turn_8h_a7fd2d6157abb71badf7de2c6cc766e64}} 
+\index{turn.h@{turn.h}!update\_table@{update\_table}}
+\index{update\_table@{update\_table}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{update\_table()}{update\_table()}}
+{\footnotesize\ttfamily void update\+\_\+table (\begin{DoxyParamCaption}\item[{int}]{matrix\mbox{[}15\mbox{]}\mbox{[}10\mbox{]},  }\item[{int}]{piece\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{int}]{height,  }\item[{int}]{width,  }\item[{int}]{start\+\_\+row,  }\item[{int}]{start\+\_\+col }\end{DoxyParamCaption})}
+
+Funzione per aggiornare la tavola da gioco
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & tavola da gioco \\
+\hline
+{\em piece} & pezzo \\
+\hline
+{\em height} & altezza del pezzo \\
+\hline
+{\em width} & larghezza del pezzo \\
+\hline
+{\em starting\+\_\+row} & riga della tavola da cui cominciare a copiare il pezzo \\
+\hline
+{\em starting\+\_\+col} & colonna scelta per inserire il pezzo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{turn_8h_a9c00df95475a506c605bf4cc34188334}\label{turn_8h_a9c00df95475a506c605bf4cc34188334}} 
+\index{turn.h@{turn.h}!valid\_selection@{valid\_selection}}
+\index{valid\_selection@{valid\_selection}!turn.h@{turn.h}}
+\doxysubsubsection{\texorpdfstring{valid\_selection()}{valid\_selection()}}
+{\footnotesize\ttfamily int valid\+\_\+selection (\begin{DoxyParamCaption}\item[{int}]{column,  }\item[{int($\ast$)}]{tetramino\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione controlla se una mossa spinge il pezzo fuori dalla tavola
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & colonna dove potrebbe essere inserito il pezzo \\
+\hline
+{\em tetramino} & pezzo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ritorna 1 la selezione è valida e 0 altromenti 
+\end{DoxyReturn}

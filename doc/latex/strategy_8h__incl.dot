@@ -1,0 +1,9 @@
+digraph "strategy.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="strategy.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="library per la strategia di gioco della CPU"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="dataType.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dataType_8h.html",tooltip="Costanti utilizzate nel progetto e strutture delle pedine e delle partite."];
+}

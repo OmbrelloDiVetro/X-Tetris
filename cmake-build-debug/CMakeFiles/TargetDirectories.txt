@@ -1,0 +1,3 @@
+C:/Users/aresu/Downloads/Tetris-master/cmake-build-debug/CMakeFiles/tetris_2.dir
+C:/Users/aresu/Downloads/Tetris-master/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/aresu/Downloads/Tetris-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir

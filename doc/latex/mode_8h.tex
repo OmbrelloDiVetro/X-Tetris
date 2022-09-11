@@ -1,0 +1,111 @@
+\hypertarget{mode_8h}{}\doxysection{mode.\+h File Reference}
+\label{mode_8h}\index{mode.h@{mode.h}}
+
+
+libreria per la gestione delle modalità e delle partite  
+
+
+{\ttfamily \#include \char`\"{}data\+Type.\+h\char`\"{}}\newline
+Include dependency graph for mode.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{mode_8h_a307d61e33b5332039c3b8945ee748897}{Pv\+E\+Game}} (\mbox{\hyperlink{structGameState}{Game\+State}} Player1, \mbox{\hyperlink{structGameState}{Game\+State}} Player2, int piece\+\_\+count\mbox{[}7\mbox{]}, \mbox{\hyperlink{structPiece}{Piece}} $\ast$pieces\mbox{[}7\mbox{]})
+\item 
+void \mbox{\hyperlink{mode_8h_a0410e58e8e55b19d5b95e724380f2c1e}{Pvp\+Game}} (\mbox{\hyperlink{structGameState}{Game\+State}} Player1, \mbox{\hyperlink{structGameState}{Game\+State}} Player2, int piece\+\_\+count\mbox{[}7\mbox{]}, \mbox{\hyperlink{structPiece}{Piece}} $\ast$pieces\mbox{[}7\mbox{]})
+\item 
+void \mbox{\hyperlink{mode_8h_a3bf3954bd94bc1eb5c110a6c3ec55e78}{Single\+Player\+Game}} (\mbox{\hyperlink{structGameState}{Game\+State}} Player, int piece\+\_\+count\mbox{[}7\mbox{]}, \mbox{\hyperlink{structPiece}{Piece}} $\ast$pieces\mbox{[}7\mbox{]})
+\item 
+void \mbox{\hyperlink{mode_8h_a1966f4b1730e17ea7f90f256a64abba2}{mode\+PvE}} ()
+\item 
+void \mbox{\hyperlink{mode_8h_a8e81b6728b5e534442f14b76c2056469}{mode\+PvP}} ()
+\item 
+void \mbox{\hyperlink{mode_8h_a3e30806368a0406e462606d944e34ddb}{mode\+Single}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+libreria per la gestione delle modalità e delle partite 
+
+\begin{DoxyAuthor}{Author}
+Lorenzo e Aresù 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mode_8h_a1966f4b1730e17ea7f90f256a64abba2}\label{mode_8h_a1966f4b1730e17ea7f90f256a64abba2}} 
+\index{mode.h@{mode.h}!modePvE@{modePvE}}
+\index{modePvE@{modePvE}!mode.h@{mode.h}}
+\doxysubsubsection{\texorpdfstring{modePvE()}{modePvE()}}
+{\footnotesize\ttfamily void mode\+PvE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione per il setup della partita multi player contro la C\+PU \mbox{\Hypertarget{mode_8h_a8e81b6728b5e534442f14b76c2056469}\label{mode_8h_a8e81b6728b5e534442f14b76c2056469}} 
+\index{mode.h@{mode.h}!modePvP@{modePvP}}
+\index{modePvP@{modePvP}!mode.h@{mode.h}}
+\doxysubsubsection{\texorpdfstring{modePvP()}{modePvP()}}
+{\footnotesize\ttfamily void mode\+PvP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione per il setup della partita multi player contro un altra persona \mbox{\Hypertarget{mode_8h_a3e30806368a0406e462606d944e34ddb}\label{mode_8h_a3e30806368a0406e462606d944e34ddb}} 
+\index{mode.h@{mode.h}!modeSingle@{modeSingle}}
+\index{modeSingle@{modeSingle}!mode.h@{mode.h}}
+\doxysubsubsection{\texorpdfstring{modeSingle()}{modeSingle()}}
+{\footnotesize\ttfamily void mode\+Single (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione per il setup della partita single player \mbox{\Hypertarget{mode_8h_a307d61e33b5332039c3b8945ee748897}\label{mode_8h_a307d61e33b5332039c3b8945ee748897}} 
+\index{mode.h@{mode.h}!PvEGame@{PvEGame}}
+\index{PvEGame@{PvEGame}!mode.h@{mode.h}}
+\doxysubsubsection{\texorpdfstring{PvEGame()}{PvEGame()}}
+{\footnotesize\ttfamily void Pv\+E\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameState}{Game\+State}}}]{Player1,  }\item[{\mbox{\hyperlink{structGameState}{Game\+State}}}]{Player2,  }\item[{int}]{piece\+\_\+count\mbox{[}7\mbox{]},  }\item[{\mbox{\hyperlink{structPiece}{Piece}} $\ast$}]{pieces\mbox{[}7\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione della partita multiplayer contro la C\+PU
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player1} & stato della tabella di gioco del primo gioctore \\
+\hline
+{\em Player2} & stato della tabella di gioco della C\+PU \\
+\hline
+{\em piece\+\_\+count} & numero di pezzi rimanenti \\
+\hline
+{\em pieces} & pointers ai pezzi selezionabili \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mode_8h_a0410e58e8e55b19d5b95e724380f2c1e}\label{mode_8h_a0410e58e8e55b19d5b95e724380f2c1e}} 
+\index{mode.h@{mode.h}!PvpGame@{PvpGame}}
+\index{PvpGame@{PvpGame}!mode.h@{mode.h}}
+\doxysubsubsection{\texorpdfstring{PvpGame()}{PvpGame()}}
+{\footnotesize\ttfamily void Pvp\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameState}{Game\+State}}}]{Player1,  }\item[{\mbox{\hyperlink{structGameState}{Game\+State}}}]{Player2,  }\item[{int}]{piece\+\_\+count\mbox{[}7\mbox{]},  }\item[{\mbox{\hyperlink{structPiece}{Piece}} $\ast$}]{pieces\mbox{[}7\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione della partita multiplayer contro un altra persona
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player1} & stato della tabella di gioco del primo gioctore \\
+\hline
+{\em Player2} & stato della tabella di gioco del secondo giocatore \\
+\hline
+{\em piece\+\_\+count} & numero di pezzi rimanenti \\
+\hline
+{\em pieces} & pointers ai pezzi selezionabili \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mode_8h_a3bf3954bd94bc1eb5c110a6c3ec55e78}\label{mode_8h_a3bf3954bd94bc1eb5c110a6c3ec55e78}} 
+\index{mode.h@{mode.h}!SinglePlayerGame@{SinglePlayerGame}}
+\index{SinglePlayerGame@{SinglePlayerGame}!mode.h@{mode.h}}
+\doxysubsubsection{\texorpdfstring{SinglePlayerGame()}{SinglePlayerGame()}}
+{\footnotesize\ttfamily void Single\+Player\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGameState}{Game\+State}}}]{Player,  }\item[{int}]{piece\+\_\+count\mbox{[}7\mbox{]},  }\item[{\mbox{\hyperlink{structPiece}{Piece}} $\ast$}]{pieces\mbox{[}7\mbox{]} }\end{DoxyParamCaption})}
+
+Funzione della partita single player
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player} & stato della tabella di gioco del giocatore \\
+\hline
+{\em piece\+\_\+count} & numero di pezzi rimanenti \\
+\hline
+{\em pieces} & pointers ai pezzi selezionabili \\
+\hline
+\end{DoxyParams}
